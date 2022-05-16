@@ -137,3 +137,26 @@ label:hover > .btn {
     display: inline-block;
 }
 
+@media (max-width: 34rem) {
+    
+    .conteiner {
+        min-width: 23rem;
+        height: 30rem;
+    }
+    
+    .item-img {
+        border: none;
+        height: 20rem;
+        margin: 1.3rem;
+    }
+
+    .nav {
+        align-self: center;
+        transform: translateY(-230%);
+    } 
+
+    .item-text{
+        margin: 3.8rem 0 0 0;
+    }
+
+}
