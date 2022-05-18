@@ -84,18 +84,13 @@ label:hover > .btn {
     transition: background-color 0.6s, border-color 0.6s;
 }
 
-.btn:hover {
-    transition: 0.6s;
-    background-color: rgb(3, 1, 1);
-    cursor: pointer;
-}
-
 #slide1:checked ~ .nav > #btn1 > .btn,
 #slide2:checked ~ .nav > #btn2 > .btn,
 #slide3:checked ~ .nav > #btn3 > .btn,
 #slide4:checked ~ .nav > #btn4 > .btn,
 #slide5:checked ~ .nav > #btn5 > .btn,
 #slide6:checked ~ .nav > #btn6 > .btn {
+    transform: scale(0.8);
     background-color: transparent;
     border: 0.2rem solid rgb(67, 7, 47);
 }
@@ -106,6 +101,7 @@ label:hover > .btn {
 #slide4:checked ~ .nav > #btn4:hover > .btn,
 #slide5:checked ~ .nav > #btn5:hover > .btn,
 #slide6:checked ~ .nav > #btn6:hover > .btn {
+    transform: scale(1);
     background-color: transparent;
     border: 0.2rem solid rgb(156, 48, 210);
 }
@@ -116,8 +112,9 @@ label:hover > .btn {
 #slide4:checked ~ .nav > #btn4:active > .btn,
 #slide5:checked ~ .nav > #btn5:active > .btn,
 #slide6:checked ~ .nav > #btn6:active > .btn  {
-  background-color: transparent;
-  border: 0.2rem solid rgb(217, 0, 61);
+    transform: scale(0.7);
+    background-color: transparent;
+    border: 0.2rem solid rgb(217, 0, 61);
 }
 
 #btn1:active > .btn,
@@ -126,8 +123,9 @@ label:hover > .btn {
 #btn4:active > .btn,
 #btn5:active > .btn,
 #btn6:active > .btn {
-  background-color: rgb(133, 45, 70);
-  border: 0.2rem solid rgb(217, 0, 61);
+    transform: scale(0.8);
+    background-color: rgb(133, 45, 70);
+    border: 0.2rem solid rgb(217, 0, 61);
 }
 
 #slide1:checked ~ .slider-items {
